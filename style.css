@@ -1,0 +1,155 @@
+/* Styling the headers */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: rgb(38, 39, 38);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ccc;
+}
+header h1{
+    margin: 0 20px;
+    color: #fff;
+}
+header a {
+    text-decoration: none;
+}
+header form{
+    display: flex;
+    align-items: center;
+}
+
+
+/* The search bar */
+#search{
+    width: 230px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+/* Styling the movies */
+main{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main div{
+  width: 250px;
+  height: 320px;
+  margin: 19px 15px;
+  background: red;
+}
+img{
+  width: 100%;
+  height: 89%;
+  object-fit: cover;
+}
+
+/* styling h2 element */
+h2{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+
+/* styling movie-detail class */
+.movie-detail {
+  background: red;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* styling next button*/
+
+.next-button { 
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+
+.hearted-button {
+  position: relative;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px
+  float: left;
+}
+
+
+.hearted-button:before,
+.hearted-button:after{
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 2px;
+  width: 20px;
+  height: 40px;
+  background: #fc2e5a;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+       -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.hearted-button:after{
+  left: 0;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+       -o-transform-origin: 100% 100%;
+          transform-origin :100% 100%;
+}
+
+main button {
+  background-color: #81D8D0; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
