@@ -39,15 +39,13 @@ function showMovies(url) {
 
                 // add a class for styling
                 detail.className = "movie-detail";
+                heart.className = "unhearted";
                 //inline styling is assign css in js 
                 detail.style['display'] = "none";
                 text.innerHTML = `${element.title}`;
                 detail.innerHTML = `Average Rating is ${element.vote_average}`;
                 image.src = IMGPATH + element.poster_path;
-                heart.className = "unhearted";
                 heart.innerHTML = "Heart";
-                
-
 
                 // appendChild makes it part of the document. Append the element to the existing elements
                 el.appendChild(image);
